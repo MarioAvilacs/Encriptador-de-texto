@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 01: Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="Imagenes/aluraoracle.png" alt="Logo Alura y Oracle" class="encabezado">
+        <h1 class="titulo-principal">Challenge 01: Encriptador de texto</h1>
+    </header>
+
+    <main class="contenido">
+        <div class="principal">
+            <textarea name="texto" id="texto" cols="50" rows="20" class="texto" placeholder="Escriba su texto aquí..."></textarea>
+            <p class="terminos">Sólo letras minúsculas y sin acénto</p>
+
+        </div>     
+        
+        <div class="botones">
+            <input type="button" onclick="encriptar()"  value="Encriptar" class="btn-encriptar">
+
+            <input type="button"  onclick="desencriptar()" value="Desencriptar" class="btn-desencriptar">
+        </div>
+           
+
+        <div class="mensaje-recibido">
+            <img src="Imagenes/Muñeco.png" alt="Dibujo de busqueda" class="dibujo" id="dibujo" height="250">
+            <textarea name="mensaje" id="mensaje" cols="50" rows="5" class="mensaje" readonly></textarea> 
+            <h2 class="titulo-mensaje" id="titulo-mensaje">Ningún mensaje encontrado aún</h2>
+            <p class="comentario" id="comentario">Ingrese el mensaje que desee encriptar o desencriptar</p>
+        </div>
+
+        <div class="copiar">
+           <input type="button" value="Copiar" class="btn-copiar" onclick="copiar()" id="btn-copiar"> 
+         </div>
+
+    </main>
+
+    <footer class="creditos">
+        <p class="copyright">&copy; Mario Avila - 2023</p>
+        <h3 class="github"><a href="https://github.com/Luis-Mario-Avila-Casas"><img src="Imagenes/github.png" alt="Logo de Github" height="109"></a></h3>
+        <h4 class="linkedin"><a href="https://www.linkedin.com/in/luis-mario-avila-casas/"><img src="Imagenes/linkedin.png" alt="Logo de LinkedIn" height="129" ></a></h4>
+    </footer>
+    
+</body>
+
+<script src="encriptador.js"></script>
+
+</html>

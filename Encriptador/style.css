@@ -1,0 +1,357 @@
+body{
+    background: #649173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Montserrat', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado{
+    position: relative;
+    display: flex;
+    width: 250px;
+    left: 5%;
+    padding: 10px;
+    margin: 0;
+    border: 15px 0;
+    top: 15%;
+}
+
+.titulo-principal{
+    font-family: "didot";
+    position: absolute;
+    display: inline-flex;
+    width: 50%;
+    left: 25%;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    top: 5%;
+    text-align: center;
+    font-style: italic;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.contenido{
+    display: flex;
+    margin: 50px;
+}
+
+.texto{
+    position: relative;
+    display: flex;
+    left: 10%;
+    font-size: 16px;
+    border: #000000 solid 1.5px;
+    border-radius: 10px;
+    text-align: justify;
+    align-items: center;
+    gap: 16px;
+    padding: 1%;
+    font-family: "century gothic";
+}
+
+.texto::placeholder{
+    font-family: "century gothic";
+    color: #0a3871;
+}
+
+.texto:focus, .texto:active{
+    outline: none;
+}
+ 
+.terminos{
+    position: relative;
+    display: flex;
+    left: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.terminos:before{
+    content: url('https://api.iconify.design/bi/exclamation-diamond-fill.svg?color=black');
+    margin: 0 10px;
+}
+
+.botones{
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 80%;
+    flex-direction: flex-start;
+    padding: 1% 0;
+}
+
+.btn-encriptar{
+    font-size: 15px;
+    width: 18%;
+    border-radius: 15px;
+    border: 1.5px solid #000000 ;
+    background: #0a3871;
+    font-size: 17px;
+    color: #FFFFFF;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.btn-desencriptar{
+    font-size: 15px;
+    width: 18%;
+    border-radius: 15px;
+    border: 1.5px solid #000000 ;
+    background: #59c0f0;
+    font-size: 17px;
+    color: #0a3871;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+    gap: 8px;
+    left: 22%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover{
+    background: #64db4c;
+    transition: 10ms all;
+    transform: scale(1.1);
+}
+
+.btn-desencriptar:hover{
+    background: #ff9870;
+    transition: 10ms all;
+    transform: scale(1.1);
+}
+
+.dibujo{
+    position: relative;
+    top: 29%;
+    left: 95%;
+}
+
+.mensaje{
+    position: absolute;
+    display: flex;
+    font-size: 16px;
+    border: #000000 solid 1.5px;
+    border-radius: 10px;
+    text-align: justify;
+    left: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    gap: 16px;
+    top: 28%;
+    font-family: "century gothic";
+}
+
+.titulo-mensaje{
+    width: 55%;
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    font-weight: 600;
+    color: #000000;
+    left: 42%;
+    position: absolute;
+    top: 88%;
+}
+
+.comentario{
+    position: absolute;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    font-weight: 400;
+    left: 39%;
+    top: 95%;
+    font-style: italic;
+    width: 61%;
+}
+
+.copiar{
+    position: absolute;
+    left: 62%;
+    text-align: center;
+    top: 101%;
+    padding: 1% 0;
+    display: flex;
+    flex-direction: flex-start;
+    width: 33%;
+    opacity: 0.3;
+}
+
+.btn-copiar{
+    font-size: 18px;
+    width: 30%;
+    border-radius: 15px;
+    border: 1.5px solid #000000 ;
+    background: #abcbf1;
+    color: #0e4392;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.btn-copiar:hover{
+    background: #4ca2db;
+    transition: 10ms all;
+    transform: scale(1.1);
+}
+
+.creditos{
+    margin: 40px;
+    position: absolute;
+    display: flex;
+}
+
+
+.github{
+    border: none;
+    margin: 80px;
+    position: relative;
+    left: 40%;
+    top: 10px;
+    left: 50%;
+    
+}
+
+.linkedin{
+    margin: 80px;
+    border: none;
+    position: absolute;
+    float: right;
+    left: 110%;
+}
+
+.copyright{
+    color: black;
+    position: relative;
+    top: 265px;
+    left: 113%;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+}
+
+/* Resposive Dising*/
+
+@media (max-width: 820px) {
+ .encabezado{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+ }
+
+ .titulo-principal{
+    font-size: 20px;
+    width: 85%;
+    padding: 0;
+    margin: 0;
+    left: 10%;
+    top: 12%;
+}
+
+.texto{
+    width: 100%;
+    height: 50%;
+    top: 8%;
+    left: 0;
+}
+
+.terminos{
+    margin: 0;
+    top: 15%;
+    left: 3%;
+    font-size: 13px;
+}
+
+.botones{
+    top: 75%;
+    left: 25%;
+}
+
+.btn-encriptar{
+    width: 30%;
+    font-size: 15px;
+}
+
+.btn-desencriptar{
+    left: 35%;
+    width: 35%;
+    font-size: 15px;
+}
+
+.mensaje-recibido img{
+    top: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.mensaje{
+    top: 85%;
+    width: 68%;
+    left: 15%;
+}
+
+.titulo-mensaje{
+    margin: 0;
+    top: 110%;
+    left: 12%;
+    font-size: 18px;
+    width: 85%;
+}
+
+.comentario{
+    margin: 0;
+    top: 117%;
+    left: 15%;
+    width: 80%;
+    font-size: 15px;
+}
+
+.copiar{
+    top: 103%;
+    left: 38%;
+}
+
+.btn-copiar{
+    width: 80%;
+}
+
+.copyright{
+    margin: 0;
+    left: 70%;
+    font-size: 13px;
+}
+ 
+.github{
+    margin: 0;
+    position: absolute;
+    top: 1000%;
+    left: 20%;
+}
+
+.linkedin{
+    margin: 0;
+    position: absolute;
+    left: 130%;
+    top: 940%;
+    float: left;
+}
+
+}
